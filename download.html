@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secrets of Anderia - Download page</title>
+    <link rel="stylesheet" href="css/download.css">
+    <link rel="stylesheet" href="css/buttons.css">
+</head>
+<body>
+    <noscript>
+		<div id="notSupportedWrap">
+			<h2 id="notSupportedTitle">This content requires JavaScript</h2>
+			<p class="notSupportedMessage">JavaScript appears to be disabled. Please enable it to view this content.</p>
+		</div>
+	</noscript>
+    <header>
+        <div class="header-content">
+        
+        </div>
+    </header>
+    <div class="content">
+        <!--<a href="index.html" style="text-decoration: none; color: black;">
+            <div class="home">
+                <div class="arrow2"></div>
+                <h2>Главная</h2>
+            </div>
+        </a>-->
+        <div style="width: 100%; display: flex; flex-direction: column; align-items: center; margin-top: 2em;">
+            <div style="display: flex; align-items: flex-end;">
+                <div class="perc"></div>
+                <div class="chest" style="margin: 0;"></div>
+            </div>
+            <h2 style="margin-bottom: 0.2em; text-align: center;" id="hd-text1">Скачать Secrets of Anderia</h2>
+            <a href="news/unoffical-run.html" style="margin-top: 0.2em; margin-bottom: 1em; color: gray; border-bottom: solid gray 1px;">Запуск игры на Linux и Mac</a>      
+        </div>
+        <div class="content-download">
+            <div class="content-download_left">
+                <h2>EXE Версия</h2>
+                <a href=""><div class="button-download" id="bd1">
+                    <h4>Скачать (beta 1.0.0)</h4>
+                    <div class="chest"></div>
+                </div></a>
+                <p>-- Архив версий --</p>
+                <a href="">Скачать (beta 0.9.0)</a>
+                <a href="">Скачать (beta 0.8.0)</a>
+                <a href="">Скачать (alpha 1.0.0)</a>
+            </div>
+            <div class="content-download_right">
+                <h2>WEB Версия</h2> 
+                <a href=""><div class="button-download" id="bd2">
+                    <h4>Скачать (beta 1.0.0)</h4>
+                    <div class="chest"></div>
+                </div></a>
+                <p>-- Архив версий --</p>
+                <a href="">Скачать (beta 0.9.0)</a>
+                <a href="">Скачать (beta 0.8.0)</a>
+                <a href="">Скачать (alpha 1.0.0)</a>
+            </div>
+        </div>
+    </div>
+	<footer>
+		<div style="display: flex;">
+			<a href="https://t.me/GeekMansLive" target="_blank">Geek Man`s Community</a>
+			<a href="https://t.me/GeekManOFF" target="_blank">Geek Man</a>
+			<a href="https://t.me/DiabloSat" target="_blank">DiabloSat</a>
+		</div>
+		<p>&#169 Secrets of Anderia (2021-2022)</p>
+	</footer>
+	<!-- JS files -->
+	<script src="js/jquery-3.6.0.min.js"></script>
+	<script src="js/color-animation"></script>
+	<script src="js/animations.js"></script>
+    <script>
+        function mobile(){
+            height = $(window).width();
+            if(height <= 1000){
+                $('#hd-text1').html('Скачать<br>Secrets of Anderia');
+            }else{
+                $('#hd-text1').html('Скачать Secrets of Anderia');
+            }
+        }
+        mobile();
+        $(window).resize(mobile);
+    </script>
+</body>
+</html>

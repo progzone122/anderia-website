@@ -1,0 +1,75 @@
+/* Download button */
+.button-start{
+    height: 3em;
+    background-color: transparent;
+    margin-top: 0.5em;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid white 0.2em;
+    border-radius: 0.5em;
+    margin-top: 1em;
+    margin-right: 3em;
+}
+.button-start h4{
+    color: white;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+/* Arrow1 */
+.arrow1{
+    width: 3em;
+    height: 3em;
+    background-image: url(../img/arrow1.png);
+    background-size: cover;
+    margin-right: 3em;
+}
+/* Arrow2 */
+.arrow2{
+    width: 3em;
+    height: 3em;
+    background-image: url(../img/arrow2.png);
+    background-size: cover;
+}
+/* Button 'See more' */
+.button-more{
+    background-color: rgb(8, 144, 185);
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid  rgb(8, 144, 185) 0.3em;
+    border-radius: 0.8em;
+    margin-top: 1em;
+    margin-right: 3em;
+    opacity: 0;
+}
+.button-more h4{
+    color: white;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+/* Button download game */
+.button-download{
+    width: 20em;
+    background-color: transparent;
+    border: solid  rgb(8, 144, 185) 0.3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1em;
+    border-radius: 0.8em;
+}
+.button-download h4{
+    color: black;
+    margin-left: 1em;
+}
+.chest{
+    margin-left: 0.3em;
+    margin-right: 1em;
+    width: 2em;
+    height: 1em;
+    background-image: url('../img/chest.gif');
+    background-size: cover;
+}

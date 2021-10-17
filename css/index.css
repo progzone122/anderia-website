@@ -1,0 +1,131 @@
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+}
+header{
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background-image: url('../img/gameplay1.gif');
+    background-position: 30%;
+    background-size: cover;
+}
+h1, h2, h3, h4, h5, p, a{
+    font-family: 'Courier';
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently
+                                    not supported by any browser */
+    text-decoration: none;
+}
+header h1,p{
+    color: white;
+    margin-bottom: 0;
+    margin-right: 2em;
+}
+.header-content{
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(1, 1, 1, 0.85);
+}
+.header-content_top{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.header-content_bottom{
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* News */
+.news{
+    margin-top: 2em;
+    width: 98%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.news-block{
+    margin-left: 2em;
+    width: 30em;
+    height: 18em;
+    display: flex;
+    flex-direction: row;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3em;
+}
+.news-block img{
+    width: 80%;
+    height: 13em;
+}
+.news-block h3, .news-block p{
+    color: black;
+    margin: 0.5em;
+    text-align: center;
+}
+.news-text{
+    width: 100%;
+    height: 100%;
+}
+#nw1, #nw2, #nw3, #nw4{
+    opacity: 1;
+}
+/* Footer */
+footer{
+    width: 100%;
+    height: 7em;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    margin-right: 2em;
+    border-bottom: solid rgb(255, 255, 255) 1px;
+}
+.more-div{
+    display: flex; 
+    justify-content: center; 
+    width: 100%; 
+    margin-bottom: 3em; 
+    height: 4em;
+}
+#a{
+    margin-left: 3em;
+}
+@media screen and (max-width : 1000px) {
+    .header p, #b1, #sl1, #text-logo, #arr1{
+        margin-right: 0;
+        text-align: center;
+    }
+    .news-block{
+        width: 80%;
+        height: 20em;
+        margin-left: 2em;
+    }
+    .news{
+        flex-wrap: nowrap;
+        flex-direction: column;
+    }
+    #a{
+        margin-left: 3em;
+    }
+}

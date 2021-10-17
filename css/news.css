@@ -1,0 +1,94 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+h1, h2, h3, h4, h5, p, a{
+    font-family: 'Courier';
+}
+header{
+    width: 100%;
+    height: 35vh;
+    background-image: url('../img/gameplay1.gif');
+    background-size: cover;
+    background-position: 50%;
+}
+.header-content{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+/* Content */
+.content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.perc{
+    margin-top: 3em;
+    width: 2.2em;
+    height: 2.3em;
+    background-image: url('../img/personage.gif');
+    background-size: cover;
+}
+.perc2{
+    width: 2.2em;
+    height: 2.3em;
+    background-image: url('../img/personage2.gif');
+    background-size: cover;
+}
+.content-flex{
+    display: flex;
+    margin-bottom: 5em;
+}
+.content-left{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3em;
+}
+.content-right{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Blocks */
+.content-block_text1{
+    width: 90%;
+}
+/* Footer */
+footer{
+    width: 100%;
+    height: 7em;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    margin-right: 2em;
+    border-bottom: solid rgb(255, 255, 255) 1px;
+}
+footer p{
+    color: white;
+}
+#img1{
+    width: 100%;
+    height: 24em;
+}
+@media screen and (max-width : 1000px) {
+    header{
+        height: 28vh;
+    }
+    #img1{
+        height: 12em;
+    }
+    .content-left, .content-right{
+        width: 90%;
+    }
+}

@@ -1,0 +1,107 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+h1, h2, h3, h4, h5, p, a{
+    font-family: 'Courier';
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently
+                                    not supported by any browser */
+    text-decoration: none;
+}
+header{
+    width: 100%;
+    height: 35vh;
+    background-image: url('../img/gameplay1.gif');
+    background-size: cover;
+    background-position: 50%;
+}
+.header-content{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+/* Content */
+.content{
+    width: 100%;
+}
+.home{
+    width: 8em;
+    margin: 1em;
+    display: flex;
+    align-items: center;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;           /* Non-prefixed version, currently
+                                    not supported by any browser */
+    text-decoration: none;
+}
+.perc{
+    margin-top: 3em;
+    width: 2.2em;
+    height: 2.3em;
+    background-image: url('../img/personage.gif');
+    background-size: cover;
+}
+.content-download{
+    width: 100%;
+    height: 80%;
+    display: flex;
+    margin-top: 2em;
+    margin-bottom: 5em;
+}
+.content-download_left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 3em;
+}
+.content-download_right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+/* Footer */
+footer{
+    width: 100%;
+    height: 7em;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+    margin-right: 2em;
+    border-bottom: solid rgb(255, 255, 255) 1px;
+}
+footer p{
+    color: white;
+}
+@media screen and (max-width : 1000px) {
+    .content-download{
+        flex-direction: column;
+        align-items: center;
+    }
+    .button-download{
+        width: 15em;
+    }
+    header{
+        height: 28vh;
+    }
+    .content-download_left, .content-download_right{
+        width: 100%;
+    }
+}
